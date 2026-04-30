@@ -72,23 +72,23 @@ useEffect(() => {
 
 <button
   onClick={() => paginate(-1)}
-  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-16 p-2 text-text-muted hover:text-primary transition-colors cursor-pointer"
+  className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-16 p-2 text-text-muted hover:text-primary transition-colors cursor-pointer"
   aria-label="Previous project"
 >
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M15 18l-6-6 6-6"/>
-        </svg>
-      </button>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M15 18l-6-6 6-6"/>
+  </svg>
+</button>
 
 <button
   onClick={() => paginate(1)}
-  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-16 p-2 text-text-muted hover:text-primary transition-colors cursor-pointer"
+  className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-16 p-2 text-text-muted hover:text-primary transition-colors cursor-pointer"
   aria-label="Next project"
 >
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M9 18l6-6-6-6"/>
-        </svg>
-      </button>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M9 18l6-6-6-6"/>
+  </svg>
+</button>
 
       <div className="flex justify-center gap-2 mt-8">
         {projects.map((_, index) => (

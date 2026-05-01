@@ -50,7 +50,7 @@ const Header = () => {
             </Link>
           ))}
           <a
-            href="https://d0ughb0y.hashnode.dev/"
+            href="https://tinl-blog.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-muted hover:text-primary transition-colors"
@@ -88,7 +88,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="https://d0ughb0y.hashnode.dev/"
+              href="https://tinl-blog.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-muted hover:text-primary py-2 transition-colors"

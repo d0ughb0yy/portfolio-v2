@@ -53,7 +53,7 @@ const socialLinks = [
   },
   {
     name: "Blog",
-    url: "https://d0ughb0y.hashnode.dev/",
+    url: "https://tinl-blog.netlify.app/",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

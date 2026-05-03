@@ -1,17 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -23,13 +16,9 @@ const Header = () => {
     { to: 'contact', label: 'Contact' }
   ];
 
-const navBgClass = scrolled
-  ? 'md:bg-bg-card/90'
-  : 'md:bg-bg-card/80';
-
 return (
   <header className="fixed top-0 left-0 right-0 md:top-4 md:left-4 md:right-4 z-50">
-  <nav className={`max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-bg-card ${navBgClass} ${isMenuOpen ? '' : 'border-b border-border/30'} md:rounded-2xl`}>
+  <nav className={`max-w-6xl mx-auto px-4 py-3 flex items-center justify-between bg-bg-card ${isMenuOpen ? '' : 'border-b border-border/30'} md:rounded-2xl`}>
 <button
   onClick={() => scroll.scrollToTop()}
   className="text-xl font-bold text-primary hover:text-accent transition-colors cursor-pointer"
@@ -97,11 +86,10 @@ return (
             y: 0,
             boxShadow: '0px 4px 10px 0px rgba(0,0,0,0.1)'
           }}
-          exit={{ 
-            opacity: 0, 
-            y: -10, 
-            boxShadow: '0px 0px 0px 0px rgba(0,0,0,0)'
-          }}
+exit={{ 
+  opacity: 0, 
+  y: -10 
+}}
           transition={{ 
             duration: 0.2, 
             ease: 'easeOut',

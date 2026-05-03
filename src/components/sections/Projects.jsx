@@ -12,7 +12,7 @@ const Projects = () => {
         transition={{ duration: 0.6 }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="font-sans text-3xl md:text-4xl font-bold mb-12 text-center">
           Projects
         </h2>
 

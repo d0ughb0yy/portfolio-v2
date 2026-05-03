@@ -4,7 +4,7 @@ import SkillCard from '../ui/SkillCard';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 px-6 bg-[#111827]">
+    <section id="skills" className="py-20 px-6 bg-bg">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ const Skills = () => {
         transition={{ duration: 0.6 }}
         className="max-w-6xl mx-auto"
       >
-<h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+<h2 className="font-sans text-3xl md:text-4xl font-bold mb-12 text-center">
   Skills
 </h2>
 

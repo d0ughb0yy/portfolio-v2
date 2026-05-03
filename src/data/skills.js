@@ -13,7 +13,7 @@ export const skills = [
     name: "Threat Detection",
     tier: "Proficient",
     proficiency: 60,
-    description: "SIEM monitoring and threat response",
+    description: "SIEM monitoring, threat hunting and vulnerability scanning",
     tools: ["Wazuh", "ELK Stack", "MITRE ATT&CK"],
     icon: "radar",
   },
@@ -22,8 +22,8 @@ export const skills = [
     name: "Network Security",
     tier: "Beginner",
     proficiency: 34,
-    description: "Network infrastructure security practices",
-    tools: ["Suricata IDS/IPS", "pfSense", "Wireshark"],
+    description: "Secure configuration and monitoring of network devices",
+    tools: ["Suricata IDS/IPS", "pfSense", "Wireshark", "Cisco configuration"],
     icon: "network",
   },
   {
@@ -40,7 +40,7 @@ export const skills = [
     name: "Email Security",
     tier: "Beginner",
     proficiency: 35,
-    description: "Suspicious email analysis and file analysis",
+    description: "Email security practices and phishing email assessments and tracking",
     tools: ["VirusTotal", "AnyRun", "Email Analysis"],
     icon: "mail",
   },
@@ -49,7 +49,7 @@ export const skills = [
     name: "Web Security",
     tier: "Intermediate",
     proficiency: 60,
-    description: "Web security concepts and vulnerability analysis",
+    description: "Web application security concepts and vulnerability analysis and exploiting",
     tools: ["Burpsuite", "OWASP Top10", "Code Analysis"],
     icon: "globe",
   },
@@ -65,18 +65,5 @@ export const getTierColor = (tier) => {
       return "var(--color-beginner)";
     default:
       return "var(--color-text-muted)";
-  }
-};
-
-export const getTierBadgeClass = (tier) => {
-  switch (tier) {
-    case "Proficient":
-      return "bg-emerald-500/20 text-emerald-400 border-emerald-500/30";
-    case "Intermediate":
-      return "bg-blue-500/20 text-blue-400 border-blue-500/30";
-    case "Beginner":
-      return "bg-gray-500/20 text-gray-400 border-gray-500/30";
-    default:
-      return "bg-gray-500/20 text-gray-400 border-gray-500/30";
   }
 };

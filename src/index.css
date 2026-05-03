@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import "tailwindcss";
 
 @theme {
   --color-bg: #0f172a;
   --color-bg-card: #1e293b;
-  --color-bg-hover: #334155;
-  --color-primary: #60a5fa;
-  --color-accent: #22d3ee;
+  --color-bg-card-hover: #334155;
+  --color-primary: #38bdf8;
+  --color-accent: #f472b6;
   --color-text: #f8fafc;
   --color-text-muted: #cbd5e1;
   --color-border: #475569;
   --color-proficient: #34d399;
   --color-intermediate: #60a5fa;
   --color-beginner: #94a3b8;
-  --font-sans: 'Poppins', system-ui, sans-serif;
-  --font-mono: 'Space Grotesk', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
 }
 
 body {
@@ -21,6 +23,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
+  letter-spacing: 0.02em;
 }
 
 @keyframes gradient-shift {
@@ -32,3 +35,5 @@ body {
   background-size: 200% 200%;
   animation: gradient-shift 20s ease infinite;
 }
+
+

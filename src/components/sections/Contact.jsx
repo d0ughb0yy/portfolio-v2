@@ -75,7 +75,7 @@ const socialLinks = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-[#111827]">
+    <section id="contact" className="py-20 px-6 bg-bg">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -83,11 +83,11 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="font-sans text-3xl md:text-4xl font-bold mb-4">
           Get In Touch
         </h2>
 
-        <p className="text-lg text-text-muted mb-10 max-w-2xl mx-auto">
+        <p className="font-sans text-lg text-text-muted mb-10 max-w-2xl mx-auto">
           Feel free to reach out for collaborations or job openings!
         </p>
 

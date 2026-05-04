@@ -48,6 +48,5 @@ Must be: Inter font → Share Tech font → Tailwind
 - `index.css`: Removed `.cursor-blink` and `.grid-bg` classes
 
 ## SkillCard Component
-- Vertical proficiency bars on left side (not horizontal)
-- No tier text/percentage displayed (bars are enough)
-- Data from `skills.js`: `proficiency` field drives bar height
+- Clean card layout with icon, title, description, and tool tags
+- No proficiency bars or tier indicators displayed
